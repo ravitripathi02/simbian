@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LeftDiv from "@/components/LeftDiv";
 import RightDiv from "@/components/RightDiv";
-
+import CenterDiv from "@/components/CenterDiv";
 export default function SmoothSwap() {
   const [swapped, setSwapped] = useState(false);
   const [hasCompletedCycle, setHasCompletedCycle] = useState(false);
@@ -24,6 +24,7 @@ export default function SmoothSwap() {
               <MotionBox key="right">
                 <RightDiv hasCompletedCycle={hasCompletedCycle} />
               </MotionBox>
+              <CenterDiv/>
               <MotionBox key="left">
                 <LeftDiv 
                   onCycleComplete={() => {
