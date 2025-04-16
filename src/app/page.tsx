@@ -17,7 +17,7 @@ export default function SmoothSwap() {
         Swap
       </button> */}
 
-      <div className="flex justify-center gap-10 w-full">
+      <div className="flex justify-center gap-10 w-full m-12">
         <AnimatePresence mode="popLayout">
           {swapped ? (
             <>
